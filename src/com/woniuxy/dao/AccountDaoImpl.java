@@ -72,7 +72,7 @@ public class AccountDaoImpl extends BaseDao implements IAccountDao {
         PreparedStatement pst2 = null;
         try {
             // 关闭自动提交,开始事务;
-            connection.setAutoCommit(false); 
+            connection.setAutoCommit(false);
             if(money < selectMoney(cardNo)){
                 String sql1 = "update t_atm set card_money = card_money - " + money + " where card_no = '" + cardNo + "' ";
                 String sql2 = "update t_atm set card_money = card_money + " + money + " where card_no = '" + cardNoOther + "' ";
@@ -111,3 +111,4 @@ public class AccountDaoImpl extends BaseDao implements IAccountDao {
         return cnt;
     }
 }
+//1
