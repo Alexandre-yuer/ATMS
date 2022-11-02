@@ -112,3 +112,4 @@ public class AccountDaoImpl extends BaseDao implements IAccountDao {
     }
 }
 //1
+//2
